@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="aplicacion_autos@127.0.0.1">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.4">
+    <root id="1"/>
+    <schema id="2" parent="1" name="aplicacion_autos">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="information_schema"/>
+    <schema id="4" parent="1" name="mysql"/>
+    <schema id="5" parent="1" name="performance_schema"/>
+    <schema id="6" parent="1" name="sys"/>
+    <table id="7" parent="2" name="cliente"/>
+    <table id="8" parent="2" name="factura"/>
+    <table id="9" parent="2" name="hoja_parte"/>
+    <table id="10" parent="2" name="mecanico"/>
+    <table id="11" parent="2" name="repuestos"/>
+    <table id="12" parent="2" name="vehiculo"/>
+    <column id="13" parent="7" name="IdCliente">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="14" parent="7" name="Nombre">
+      <Position>2</Position>
+      <DataType>varchar(45)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="15" parent="7" name="Direccion">
+      <Position>3</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="16" parent="7" name="Telefono">
+      <Position>4</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="17" parent="7" name="Cantidad_de_autos">
+      <Position>5</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <key id="18" parent="7" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>IdCliente</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="19" parent="8" name="IdFactura">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="20" parent="8" name="Fecha">
+      <Position>2</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="21" parent="8" name="IdHoja">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="22" parent="8" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>IdFactura</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="23" parent="9" name="IdHoja">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="24" parent="9" name="Concepto">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="25" parent="9" name="Cantidad">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="26" parent="9" name="Reparacion">
+      <Position>4</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="27" parent="9" name="IdMecanico">
+      <Position>5</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="28" parent="9" name="IdMecanico">
+      <ColNames>IdMecanico</ColNames>
+    </index>
+    <key id="29" parent="9" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>IdHoja</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="30" parent="9" name="IdMecanico">
+      <ColNames>IdMecanico</ColNames>
+      <RefSchemaName>aplicacion_autos</RefSchemaName>
+      <RefTableName>mecanico</RefTableName>
+      <RefColNames>IdMecanico</RefColNames>
+    </foreign-key>
+    <column id="31" parent="10" name="IdMecanico">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="32" parent="10" name="Nombre">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="33" parent="10" name="Direccion">
+      <Position>3</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="34" parent="10" name="Telefono">
+      <Position>4</Position>
+      <DataType>varchar(9)|0</DataType>
+    </column>
+    <column id="35" parent="10" name="Costo_Hora">
+      <Position>5</Position>
+      <DataType>decimal(10,4)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="36" parent="10" name="Categoria">
+      <Position>6</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="37" parent="10" name="IdVehiculo">
+      <Position>7</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="38" parent="10" name="IdVehiculo">
+      <ColNames>IdVehiculo</ColNames>
+    </index>
+    <key id="39" parent="10" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>IdMecanico</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="40" parent="10" name="IdVehiculo">
+      <ColNames>IdVehiculo</ColNames>
+      <RefSchemaName>aplicacion_autos</RefSchemaName>
+      <RefTableName>vehiculo</RefTableName>
+      <RefColNames>IdVehiculo</RefColNames>
+    </foreign-key>
+    <column id="41" parent="11" name="IdRep">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="42" parent="11" name="Descripcion">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="43" parent="11" name="CostoUnit">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="44" parent="11" name="PrecioUnit">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="45" parent="11" name="IdHoja">
+      <Position>5</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="46" parent="11" name="IdHoja">
+      <ColNames>IdHoja</ColNames>
+    </index>
+    <key id="47" parent="11" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>IdRep</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="48" parent="11" name="IdHoja">
+      <ColNames>IdHoja</ColNames>
+      <RefSchemaName>aplicacion_autos</RefSchemaName>
+      <RefTableName>hoja_parte</RefTableName>
+      <RefColNames>IdHoja</RefColNames>
+    </foreign-key>
+    <column id="49" parent="12" name="IdVehiculo">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="50" parent="12" name="Modelo">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="51" parent="12" name="Color">
+      <Position>3</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="52" parent="12" name="Fecha_Ent">
+      <Position>4</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="53" parent="12" name="Hora_Ent">
+      <Position>5</Position>
+      <DataType>time|0</DataType>
+    </column>
+    <column id="54" parent="12" name="Tipo_Vehiculo">
+      <Position>6</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="55" parent="12" name="IdCliente">
+      <Position>7</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="56" parent="12" name="IdCliente">
+      <ColNames>IdCliente</ColNames>
+    </index>
+    <key id="57" parent="12" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>IdVehiculo</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="58" parent="12" name="IdCliente">
+      <ColNames>IdCliente</ColNames>
+      <RefSchemaName>aplicacion_autos</RefSchemaName>
+      <RefTableName>cliente</RefTableName>
+      <RefColNames>IdCliente</RefColNames>
+    </foreign-key>
+  </database-model>
+</dataSource>
