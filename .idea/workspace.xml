@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93c98ded-23af-435c-91a9-ac887a93ec2c" name="Default" comment="second commit">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/model/BaseEntity.java" afterPath="$PROJECT_DIR$/src/com/autospatool/model/BaseEntity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/model/Bill.java" afterPath="$PROJECT_DIR$/src/com/autospatool/model/Bill.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/model/Client.java" afterPath="$PROJECT_DIR$/src/com/autospatool/model/Client.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/model/ClientEntity.java" afterPath="$PROJECT_DIR$/src/com/autospatool/model/ClientEntity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/model/Mechanic.java" afterPath="$PROJECT_DIR$/src/com/autospatool/model/Mechanic.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/model/Report.java" afterPath="$PROJECT_DIR$/src/com/autospatool/model/Report.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/model/Vehicle.java" afterPath="$PROJECT_DIR$/src/com/autospatool/model/Vehicle.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/autospatool/model/Client.java" afterPath="$PROJECT_DIR$/src/com/autospatool/model/Client.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,12 +47,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="console.sql" pinned="false" current-in-tab="true">
+      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/c61e15ca-3fbc-4e02-b185-a65b3541078b/console.sql">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Client.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/autospatool/model/Client.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="28" lean-forward="false" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -93,6 +99,7 @@
         <option value="$PROJECT_DIR$/src/model/Bill.java" />
         <option value="$PROJECT_DIR$/src/model/Client.java" />
         <option value="$PROJECT_DIR$/src/model/ClientEntity.java" />
+        <option value="$PROJECT_DIR$/src/com/autospatool/model/Client.java" />
       </list>
     </option>
   </component>
@@ -144,6 +151,13 @@
               <item name="AplicacionAutosWeb" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="autospatool" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AplicacionAutosWeb" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AplicacionAutosWeb" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="autospatool" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AplicacionAutosWeb" type="b2602c69:ProjectViewProjectNode" />
@@ -344,12 +358,12 @@
       <workItem from="1508611085690" duration="1601000" />
       <workItem from="1508623802815" duration="215000" />
       <workItem from="1508630616214" duration="4557000" />
-      <workItem from="1508635908628" duration="2513000" />
+      <workItem from="1508635908628" duration="3767000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8886000" />
+    <option name="totallyTimeSpent" value="10140000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -533,16 +547,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/autospatool/model/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1105">
-          <caret line="76" column="52" lean-forward="false" selection-start-line="76" selection-start-column="52" selection-end-line="76" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/autospatool/model/ClientEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -561,6 +565,16 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/autospatool/model/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="28" lean-forward="false" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
