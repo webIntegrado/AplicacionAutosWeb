@@ -1,4 +1,4 @@
-package model;
+package com.autospatool.model;
 
 public class Vehicle {
 

@@ -1,4 +1,4 @@
-package model;
+package com.autospatool.model;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
